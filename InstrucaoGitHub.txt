@@ -1,0 +1,13 @@
+
+
+			Atualizar biblioteca do GitHub
+
+
+	git status
+		Ver se existem atualizações pendentes
+	git add .
+		Adicionar as novas informações no repositório git
+	git commit -a -m "texto"
+		Confirmar atualizações
+	git push origin main
+		Enviar as informações para o GitHub
