@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Regras Gerais */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* Externo */
+body {
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Caixa */
+main.container {
+    background: white;
+    max-width: 70%;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rbga(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Titulo */
+#titulo {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+    margin-left: 7%;
+}
+
+/* Entalhe abaixo do titulo */
+#titulo:before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+
+/* Subtitulo */
+#subtitulo {
+    font-weight: 500;
+    margin-bottom: 0rem;
+    position: relative;
+}
+/* Tudo abaixo do titulo */
+form {
+    display: flex;
+    flex-direction: column;
+}
+/* Classes grupo/campo que estão dentro de um fieldset, neste caso nome e sobrenome*/
+fieldset.grupo .campo {
+    display: inline-flex;
+    width: 48%;
+    margin: 2px;
+}
+
+/* Configura os botões radiais */
+.genero {
+    display: inline-flex;
+}
+.genero label {
+    padding-left: 10px;
+}
+
+/* Tudo que esteja como classe grupo */
+.grupo {
+    position: relative;
+}
+/* O que vem antes do bloco grupo */
+.grupo:before{
+    display: table;
+}
+/* O que vier depois do bloco grupo */
+.grupo:after {
+    clear: both;
+    display: table
+}
+/* Controla todos os inputs dentro da classe grupo */
+.grupo input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.grupo input::placeholder {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+
+.campo input[type='submit']::hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to left, #4776E6, #8e54e9);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.campo span {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    display: block;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+input, select, textarea, button {
+    border-radius: 8px;
+}
+
+.campo input[type='text'], .campo input[type='email'], .campo select, .campo textarea {
+    padding: 2px;
+    border: 1px solid #59429d;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+.botao {
+    font-size: 1.2em;
+    border: 0;
+    margin-bottom: 1em;
+    padding: 0.2em 0.4em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin-top: 2rem;
+    background: linear-gradient(to left, #4776E6, #8e54e9);
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+}
+
+.botao:hover {
+    background: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+.botao, select {
+    cursor: pointer;
+}
+
+.check {
+    display: inline-block;
+}
