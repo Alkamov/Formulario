@@ -66,15 +66,7 @@ fieldset.grupo .campo {
     margin: 2px;
 }
 
-/* Gênero - Configura os botões radiais */
-.genero {
     display: inline-flex;
-}
-.genero label {
-    display: inline-flex;
-    padding-left: 10px;
-}
-
 /* Tudo que esteja como classe grupo */
 .grupo {
     position: relative;
@@ -170,4 +162,3 @@ input, select, textarea, button {
 
 .check {
     display: inline-block;
-}
