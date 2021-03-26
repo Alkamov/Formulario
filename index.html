@@ -23,26 +23,24 @@
             <!-- Inicio do formulário -->
             <form>
 
-                <fieldset class='grupo'>
+                <fieldset>
                     <!-- Campo "nome" -->
                     <div class='campo'>
-                        <label for='nome'><strong>Nome</strong></label>
-                        <input type="text" name='nome' id='nome' required>
+                        <input type="text" name='nome' id='nome' required placeholder=" Enter your name">
                     </div>
                 
                     <!-- Campo "sobrenome" -->
                     <div class='campo'>
-                        <label for='sobrenome'><strong>Sobrenome</strong></label>
-                        <input type='text' name='sobrenome' id='sobrenome' required>
+                        <input type='text' name='sobrenome' id='sobrenome' required placeholder=" Enter your surname">
                     </div>
+
                 </fieldset>
-
-                <!-- Campo "e-mail" -->
-                <div class='campo'>
-                    <label for='email'><strong>E-mail</strong></label>
-                    <input type='email' name='email' id='email' required>
-                </div>
-
+                    <!-- Campo "e-mail" -->
+                    <div class='campo'>
+                        <br>
+                        <input type='email' name='email' id='email' required placeholder=" Enter your e-mail">
+                    </div>
+                
                 <!-- Campo "gênero" -->
                 <div class='campo'>
                     <label><strong>Com qual gênero você se identifica?</strong></label>
@@ -95,19 +93,29 @@
                 </div>
 
                 <!-- Campo "bebidas" para multiplas escolhas -->
-                <fieldset class='grupo'>
-                    <div id='check'>
+                <fieldset class='check'>
                         <label><strong>Quais das seguintes bebidas você ingere frequentemente</strong></label><br>
+                    <div>
                         <input type='checkbox' id='bebida1' name='bebida1' value='gin'>
                         <label for="bebida1">GIN</label>
+                    </div>
+                    <div>
                         <input type='checkbox' id='bebida2' name='bebida2' value='vodka'>
                         <label for="bebida2">Vodka</label>
+                    </div>
+                    <div>
                         <input type='checkbox' id='bebida3' name='bebida3' value='cachaca'>
                         <label for="bebida3">Cachaça</label>
+                    </div>
+                    <div>
                         <input type='checkbox' id='bebida4' name='bebida4' value='cerveja'>
                         <label for="bebida4">Cerveja</label>
+                    </div>
+                    <div>
                         <input type='checkbox' id='bebida5' name='bebida5' value='espumante'>
                         <label for="bebida5">Empumante</label>
+                    </div>
+                    <div>
                         <input type='checkbox' id='bebida6' name='bebida6' value='uisque'>
                         <label for="bebida6">Uísque</label>                
                     </div>

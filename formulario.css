@@ -10,7 +10,7 @@
 }
 /* Externo */
 body {
-    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    background: linear-gradient(30deg, #f400a1, #ffbf00);
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
@@ -45,7 +45,7 @@ main.container {
     bottom: 3px;
     left: 0;
     border-radius: 8px;
-    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    background: linear-gradient(30deg, #ffbf00, #f400a1);
 }
 
 /* Subtitulo */
@@ -60,11 +60,11 @@ form {
     flex-direction: column;
 }
 /* Classes grupo/campo que estão dentro de um fieldset, neste caso nome e sobrenome*/
-fieldset.grupo .campo {
+fieldset .campo {
     display: inline-flex;
-    width: 48%;
-    margin: 2px;
+    flex-direction: column;
 }
+
 
 /* Gênero - Configura os botões radiais */
 .genero {
@@ -75,40 +75,10 @@ fieldset.grupo .campo {
     padding-left: 10px;
 }
 
-/* Tudo que esteja como classe grupo */
-.grupo {
-    position: relative;
-}
-/* O que vem antes do bloco grupo */
-.grupo:before{
-    display: table;
-}
-/* O que vier depois do bloco grupo */
-.grupo:after {
-    clear: both;
-    display: table
-}
-/* Controla todos os inputs dentro da classe grupo */
-.grupo input {
-    outline: none;
-    font-size: 0.9rem;
-    color: rgba(0, 0, 0, 0.7);
-}
-
-.grupo input::placeholder {
-    color: rgba(0, 0, 0, 0.5)
-}
-
-
-.campo input[type='submit']::hover {
-    letter-spacing: 0.5px;
-    background: linear-gradient(to left, #4776E6, #8e54e9);
-}
 
 .campo {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
 }
 
 .campo span {
@@ -128,18 +98,19 @@ input, select, textarea, button {
 }
 
 .campo input[type='text'], .campo input[type='email'], .campo select, .campo textarea {
-    padding: 2px;
-    border: 1px solid #59429d;
-    box-shadow: rgba(0, 0, 0, 0.2);
-    display: block;
+    border: 1px solid #ad8200;
+    box-shadow: rgba(0, 0, 0, 0.7);
+    display: flex;
+    padding-left: 3px;
 }
 
 .campo select option {
-    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: #E0E0F8;
+    outline: none;
+    background: #f400000e;
 }
 
 .botao {
@@ -150,8 +121,7 @@ input, select, textarea, button {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     margin-top: 2rem;
-    background: linear-gradient(to left, #4776E6, #8e54e9);
-    cursor: pointer;
+    background: linear-gradient(45deg, #f400a1, #ffbf00);
     color: white;
     border-radius: 4px;
     transition: all 0.3s ease;
@@ -159,7 +129,7 @@ input, select, textarea, button {
 }
 
 .botao:hover {
-    background: #ccbbff;
+    background:#f400494f;
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
 }
@@ -168,6 +138,13 @@ input, select, textarea, button {
     cursor: pointer;
 }
 
-.check {
+.campo input[type='submit']::hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(30deg, #ffbf00, #f400a1);
+}
+
+.check div{
     display: inline-block;
+    margin-left: 1px;
+    margin-right: 5px;
 }
